@@ -24,8 +24,11 @@ public class TestSpill {
 			t.trill();
 			res.add(t.getVerdi());
 		}
-		assertTrue(res.stream().mapToInt(s -> s).max().getAsInt() < (Konstanter.TERNINGSTYPE + 1));
+		int max = res.stream().mapToInt(s -> s).max().getAsInt();
+		int min = res.stream().mapToInt(s -> s).min().getAsInt();
 
+		assertTrue(max < (Konstanter.TERNINGSTYPE + 1));
+		assertTrue(min > 0);
 	}
 
 	@Test
@@ -36,11 +39,10 @@ public class TestSpill {
 			k.trill();
 			res.add(k.getSum());
 		}
-		int storsteSum = res.stream().mapToInt(s -> s).max().getAsInt();
-		int minsteSum = res.stream().mapToInt(s -> s).min().getAsInt();
-		assertTrue(storsteSum < Konstanter.ANTALLTERNINGER * Konstanter.TERNINGSTYPE + 1);
-		assertTrue(minsteSum > Konstanter.ANTALLTERNINGER - 1);
-
+		int max = res.stream().mapToInt(s -> s).max().getAsInt();
+		int min = res.stream().mapToInt(s -> s).min().getAsInt();
+		assertTrue(max < Konstanter.ANTALLTERNINGER * Konstanter.TERNINGSTYPE + 1);
+		assertTrue(min > Konstanter.ANTALLTERNINGER - 1);
 	}
 
 }
