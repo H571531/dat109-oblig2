@@ -29,10 +29,7 @@ public class Klient {
 			vinnerSetning="Ingen spillere.";
 		}
 		ui.visVinner(vinnerSetning);
-		System.out.println(ferdig);
 		ferdig=ui.spilleIgjen();
-		System.out.println(ferdig);
-		
 		}
 	}
 

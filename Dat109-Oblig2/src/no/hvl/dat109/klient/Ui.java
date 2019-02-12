@@ -50,9 +50,7 @@ public class Ui {
 
         if(n == JOptionPane.YES_OPTION){
             spille=false;
-            System.out.println("Starter igjen");
         }else {
-            System.out.println("Starter ikke");
             spille=true;
         }
         return spille;

@@ -27,7 +27,6 @@ public void leggTilSpiller(String navn) {
 }
 
 public Spiller spill() {
-	System.out.println("Spiller ");
 	Spiller vinner;
 	if(spillere.size()>1) {
 		spillere.forEach(s->s.spill(kopp));
