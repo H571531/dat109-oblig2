@@ -12,7 +12,7 @@ import no.hvl.dat109.util.Konstanter;
  * @author Gruppe 13
  *
  */
-public class Kopp implements KoppInterface {
+public class Kopp {
 	private List<TerningInterface> terninger = new ArrayList<Terning>();
 	private int sum;
 	private int id;
