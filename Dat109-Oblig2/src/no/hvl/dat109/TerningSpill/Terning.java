@@ -7,7 +7,7 @@ import no.hvl.dat109.util.Konstanter;
 /**
  * Terning objekt. Kastes og tar vare p� sin verdi.
  * 
- * @author Gruppe
+ * @author Gruppe 13
  *
  */
 public class Terning {
@@ -36,10 +36,10 @@ public class Terning {
 	}
 
 	/**
-	 * Hjelpe klasse for trilling
+	 * Hjelpemetode for trilling
 	 * 
-	 * @param ternings
-	 *            type i tilfelle man vil ha andre typer
+	 * @param terningstype
+	 *            i tilfelle man vil ha andre typer
 	 * @return returnerer tilfeldig verdi i ternings typen
 	 */
 	private int roll(int tType) {

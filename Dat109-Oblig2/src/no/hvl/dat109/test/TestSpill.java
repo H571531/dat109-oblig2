@@ -10,7 +10,12 @@ import org.junit.Test;
 import no.hvl.dat109.TerningSpill.Kopp;
 import no.hvl.dat109.TerningSpill.Terning;
 import no.hvl.dat109.util.Konstanter;
-
+/**
+ * Testklasse
+ * 
+ * @author Gruppe 13
+ *
+ */
 public class TestSpill {
 
 	/**

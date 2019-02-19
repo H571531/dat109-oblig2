@@ -4,7 +4,7 @@
 package no.hvl.dat109.util;
 
 /**
- * @author adria
+ * @author Gruppe 13
  *
  *         Klasse med konstanter
  */

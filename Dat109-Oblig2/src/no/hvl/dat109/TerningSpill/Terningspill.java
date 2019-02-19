@@ -11,7 +11,7 @@ import no.hvl.dat109.util.Konstanter;
 /**
  * Terningspill Kontroller for spillet
  * 
- * @author Gruppe
+ * @author Gruppe 13
  *
  */
 public class Terningspill {

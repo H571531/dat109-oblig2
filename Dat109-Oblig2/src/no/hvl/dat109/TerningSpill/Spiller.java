@@ -3,7 +3,7 @@ package no.hvl.dat109.TerningSpill;
 /**
  * Spiller objektet.
  * 
- * @author adria
+ * @author Gruppe 13
  *
  */
 public class Spiller {

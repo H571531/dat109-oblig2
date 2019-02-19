@@ -8,7 +8,7 @@ import no.hvl.dat109.util.Konstanter;
 /**
  * Kopp objektet, brukes til � kaste og ta vare p� terningene.
  * 
- * @author Gruppe
+ * @author Gruppe 13
  *
  */
 public class Kopp {

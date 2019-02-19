@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import no.hvl.dat109.grensesnitt.UiInterface;
 
 /**
- * @author Adrian
+ * @author Gruppe 13
  *
  */
 public class MessageDialogUi implements UiInterface {
