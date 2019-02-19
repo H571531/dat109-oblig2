@@ -5,7 +5,7 @@ import java.util.Random;
 import no.hvl.dat109.util.Konstanter;
 
 /**
- * Terning objekt. Kastes og tar vare på sin verdi.
+ * Terning objekt. Kastes og tar vare pï¿½ sin verdi.
  * 
  * @author Gruppe
  *
@@ -13,16 +13,18 @@ import no.hvl.dat109.util.Konstanter;
 public class Terning {
 	private int id;
 	private int verdi;
+	private Random random;
 
 	/**
-	 * Konstruktør
+	 * Konstruktï¿½r
 	 * 
 	 * @param id
-	 *            på terning
+	 *            pï¿½ terning
 	 */
-	public Terning(int id) {
-		this.id = id;
+	public Terning() {
+		this.id = Konstanter.terningId++;
 		verdi = 0;
+		random = new Random();
 	}
 
 	/**
@@ -41,8 +43,7 @@ public class Terning {
 	 * @return returnerer tilfeldig verdi i ternings typen
 	 */
 	private int roll(int tType) {
-		Random rn = new Random();
-		int answer = rn.nextInt(tType) + 1;
+		int answer = random.nextInt(tType) + 1;
 		return answer;
 	}
 

@@ -18,7 +18,7 @@ public class TestSpill {
 	 */
 	@Test
 	public void testTerning() {
-		Terning t = new Terning(0);
+		Terning t = new Terning();
 		List<Integer> res = new ArrayList<Integer>();
 		for (int i = 0; i < 1000; i++) {
 			t.trill();
@@ -33,7 +33,7 @@ public class TestSpill {
 
 	@Test
 	public void testKopp() {
-		Kopp k = new Kopp(1);
+		Kopp k = new Kopp();
 		List<Integer> res = new ArrayList<Integer>();
 		for (int i = 0; i < 1000; i++) {
 			k.trill();

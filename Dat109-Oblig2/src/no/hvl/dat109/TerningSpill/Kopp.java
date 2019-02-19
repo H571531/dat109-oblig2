@@ -6,7 +6,7 @@ import java.util.List;
 import no.hvl.dat109.util.Konstanter;
 
 /**
- * Kopp objektet, brukes til å kaste og ta vare på terningene.
+ * Kopp objektet, brukes til ï¿½ kaste og ta vare pï¿½ terningene.
  * 
  * @author Gruppe
  *
@@ -17,17 +17,17 @@ public class Kopp {
 	private int id;
 
 	/**
-	 * Konstruktør
+	 * Konstruktï¿½r
 	 * 
 	 * @param id
 	 *            for kopp.
 	 */
-	public Kopp(int id) {
+	public Kopp() {
 		for (int i = 0; i < Konstanter.ANTALLTERNINGER; i++) {
-			terninger.add(new Terning(id + i));
+			terninger.add(new Terning());
 		}
 		sum = 0;
-		this.id = id;
+		this.id = Konstanter.koppId++;
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class Kopp {
 	}
 
 	/**
-	 * Sjekker verdi på vær terning og summerer disse
+	 * Sjekker verdi pï¿½ vï¿½r terning og summerer disse
 	 * 
 	 * @return sum av alle terninger i koppen.
 	 */

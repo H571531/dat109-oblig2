@@ -8,7 +8,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import no.hvl.dat109.ADT.UiInterface;
+import no.hvl.dat109.grensesnitt.UiInterface;
 
 /**
  * @author Adrian

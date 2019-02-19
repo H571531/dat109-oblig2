@@ -1,4 +1,4 @@
-package no.hvl.dat109.ADT;
+package no.hvl.dat109.grensesnitt;
 
 import java.util.List;
 

@@ -6,6 +6,8 @@ package no.hvl.dat109.TerningSpill;
 import java.util.ArrayList;
 import java.util.List;
 
+import no.hvl.dat109.util.Konstanter;
+
 /**
  * Terningspill Kontroller for spillet
  * 
@@ -18,22 +20,22 @@ public class Terningspill {
 	Kopp kopp;
 
 	/**
-	 * Konstruktør
+	 * Konstruktï¿½r
 	 * 
 	 * @param id
-	 *            på spillet
+	 *            pï¿½ spillet
 	 */
-	public Terningspill(int id) {
+	public Terningspill() {
 		spillere = new ArrayList<Spiller>();
-		this.id = id;
-		kopp = new Kopp(id * 10);
+		this.id = Konstanter.spillId++;
+		kopp = new Kopp();
 	}
 
 	/**
 	 * Legger til en spiller
 	 * 
 	 * @param navn
-	 *            på spilleren
+	 *            pï¿½ spilleren
 	 */
 	public void leggTilSpiller(String navn) {
 		spillere.add(new Spiller(navn));

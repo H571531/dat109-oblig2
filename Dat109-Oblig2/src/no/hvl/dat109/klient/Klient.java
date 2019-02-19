@@ -3,20 +3,20 @@ package no.hvl.dat109.klient;
 import java.util.ArrayList;
 import java.util.List;
 
-import no.hvl.dat109.ADT.UiInterface;
 import no.hvl.dat109.TerningSpill.Spiller;
 import no.hvl.dat109.TerningSpill.Terningspill;
+import no.hvl.dat109.grensesnitt.UiInterface;
 
 public class Klient {
 	/**
-	 * Main metode for å starte spillet
+	 * Main metode for ï¿½ starte spillet
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<String> spillere = new ArrayList<String>();
-		Terningspill spill = new Terningspill(0);
+		Terningspill spill = new Terningspill();
 		UiInterface ui;
 
 		ui = new MessageDialogUi();
