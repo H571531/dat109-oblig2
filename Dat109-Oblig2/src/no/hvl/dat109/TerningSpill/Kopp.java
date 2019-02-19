@@ -20,8 +20,7 @@ public class Kopp {
 	/**
 	 * Konstrukt�r
 	 * 
-	 * @param id
-	 *            for kopp.
+	 * @param id for kopp.
 	 */
 	public Kopp() {
 		for (int i = 0; i < Konstanter.ANTALLTERNINGER; i++) {
