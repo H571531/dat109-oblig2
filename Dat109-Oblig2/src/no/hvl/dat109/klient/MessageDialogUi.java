@@ -8,13 +8,13 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import no.hvl.dat109.ADT.UiADT;
+import no.hvl.dat109.ADT.UiInterface;
 
 /**
  * @author Adrian
  *
  */
-public class MessageDialogUi implements UiADT {
+public class MessageDialogUi implements UiInterface {
 
 	public MessageDialogUi() {
 

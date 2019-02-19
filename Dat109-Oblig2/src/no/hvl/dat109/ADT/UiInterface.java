@@ -2,7 +2,7 @@ package no.hvl.dat109.ADT;
 
 import java.util.List;
 
-public interface UiADT {
+public interface UiInterface {
 
 	List<String> setUpDeltakere();
 

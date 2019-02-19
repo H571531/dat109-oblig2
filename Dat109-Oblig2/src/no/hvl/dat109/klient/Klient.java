@@ -3,7 +3,7 @@ package no.hvl.dat109.klient;
 import java.util.ArrayList;
 import java.util.List;
 
-import no.hvl.dat109.ADT.UiADT;
+import no.hvl.dat109.ADT.UiInterface;
 import no.hvl.dat109.TerningSpill.Spiller;
 import no.hvl.dat109.TerningSpill.Terningspill;
 
@@ -17,7 +17,7 @@ public class Klient {
 		// TODO Auto-generated method stub
 		List<String> spillere = new ArrayList<String>();
 		Terningspill spill = new Terningspill(0);
-		UiADT ui;
+		UiInterface ui;
 
 		ui = new MessageDialogUi();
 		boolean ferdig = false;
