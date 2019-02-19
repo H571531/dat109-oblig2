@@ -26,7 +26,7 @@ public class Kopp {
 		for (int i = 0; i < Konstanter.ANTALLTERNINGER; i++) {
 			terninger.add(new Terning(id + i));
 		}
-		int sum = 0;
+		sum = 0;
 		this.id = id;
 	}
 
