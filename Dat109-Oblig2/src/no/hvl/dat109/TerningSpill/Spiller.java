@@ -1,5 +1,7 @@
 package no.hvl.dat109.TerningSpill;
 
+import no.hvl.dat109.grensesnitt.KoppInterface;
+
 /**
  * Spiller objektet.
  * 
@@ -27,8 +29,7 @@ public class Spiller {
 	 * @param kopp
 	 *            som skal spilles med.
 	 */
-	public void spill(Kopp kopp) {
-		// TODO Auto-generated method stub
+	public void spill(KoppInterface kopp) {
 		kopp.trill();
 		verdi = kopp.getSum();
 	}
