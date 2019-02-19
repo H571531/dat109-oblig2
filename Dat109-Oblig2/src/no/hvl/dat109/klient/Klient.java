@@ -19,15 +19,12 @@ public class Klient {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		List<String> spillere = new ArrayList<String>();
 		Terningspill spill = new Terningspill();
 		UiInterface ui;
-		ui = new MessageDialogUi(spill);
 		
+		//ui = new MessageDialogUi(spill);
+		ui = new Tekstgrensesnitt(spill);
 		boolean ferdig = false;
-		Spiller vinner;
-		String vinnerSetning;
 
 		ui.setUpDeltakere();
 		
