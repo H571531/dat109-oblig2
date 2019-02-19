@@ -14,13 +14,19 @@ import no.hvl.dat109.grensesnitt.UiInterface;
  */
 public class Klient {
 	/**
-	 * Main metode for � starte spillet
+	 * Main metode for å starte spillet
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		Terningspill spill = new Terningspill();
 		UiInterface ui;
+		
+		/*
+		 * To forskjellige brukergrensesnitt er implementert:
+		 * MessageDialogUi for bruk av dialogbokser,
+		 * Tekstgrensesnitt for bruk av konsoll
+		 */
 		
 		//ui = new MessageDialogUi(spill);
 		ui = new Tekstgrensesnitt(spill);

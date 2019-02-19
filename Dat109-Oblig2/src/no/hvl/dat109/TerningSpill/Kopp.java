@@ -3,31 +3,25 @@ package no.hvl.dat109.TerningSpill;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import no.hvl.dat109.grensesnitt.TerningInterface;
 import no.hvl.dat109.grensesnitt.KoppInterface;
 import no.hvl.dat109.util.Konstanter;
 
 /**
- * Kopp objektet, brukes til � kaste og ta vare p� terningene.
+ * Kopp objektet, brukes til å kaste og ta vare på terningene.
  * 
  * @author Gruppe 13
  *
  */
-
-
-
 public class Kopp implements KoppInterface {
-  	private List<TerningInterface> terninger = new ArrayList<TerningInterface>();
-
+	private List<TerningInterface> terninger = new ArrayList<TerningInterface>();
 
 	private int sum;
 	private int id;
 
 	/**
-	 * Konstrukt�r
+	 * Konstruktør
 	 * 
-	 * @param id for kopp.
 	 */
 	public Kopp() {
 		for (int i = 0; i < Konstanter.ANTALLTERNINGER; i++) {
@@ -46,7 +40,7 @@ public class Kopp implements KoppInterface {
 	}
 
 	/**
-	 * Sjekker verdi p� v�r terning og summerer disse
+	 * Sjekker verdi på hver terning og summerer disse
 	 * 
 	 * @return sum av alle terninger i koppen.
 	 */

@@ -21,9 +21,8 @@ public class Terningspill {
 	KoppInterface kopp;
 
 	/**
-	 * Konstrukt�r
+	 * Konstruktør
 	 * 
-	 * @param id p� spillet
 	 */
 	public Terningspill() {
 		spillere = new ArrayList<Spiller>();
@@ -34,7 +33,7 @@ public class Terningspill {
 	/**
 	 * Legger til en spiller
 	 * 
-	 * @param navn p� spilleren
+	 * @param navn på spilleren
 	 */
 	public void leggTilSpiller(String navn) {
 		spillere.add(new Spiller(navn));
@@ -42,6 +41,7 @@ public class Terningspill {
 
 	/**
 	 * Starter spillet med spillerne som er lagt til.
+	 * Håndterer ikke hvis flere spillere har samme verdi, siden dette ikke er definert i modellen.
 	 * 
 	 * @return vinneren av spillet.
 	 */

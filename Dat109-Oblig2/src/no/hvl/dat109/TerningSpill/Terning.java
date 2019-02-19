@@ -6,7 +6,7 @@ import no.hvl.dat109.grensesnitt.TerningInterface;
 import no.hvl.dat109.util.Konstanter;
 
 /**
- * Terning objekt. Kastes og tar vare p� sin verdi.
+ * Terning objekt. Kastes og tar vare på sin verdi.
  * 
  * @author Gruppe 13
  *
@@ -17,10 +17,9 @@ public class Terning implements TerningInterface {
 	private Random random;
 
 	/**
-	 * Konstrukt�r
+	 * Konstruktør
 	 * 
-	 * @param id
-	 *            p� terning
+	 * @param id på terning
 	 */
 	public Terning() {
 		this.id = Konstanter.terningId++;
@@ -39,8 +38,7 @@ public class Terning implements TerningInterface {
 	/**
 	 * Hjelpemetode for trilling
 	 * 
-	 * @param terningstype
-	 *            i tilfelle man vil ha andre typer
+	 * @param terningstype i tilfelle man vil ha andre typer
 	 * @return returnerer tilfeldig verdi i ternings typen
 	 */
 	private int roll(int tType) {

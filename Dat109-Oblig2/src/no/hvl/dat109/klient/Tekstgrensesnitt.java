@@ -6,6 +6,11 @@ import no.hvl.dat109.TerningSpill.Spiller;
 import no.hvl.dat109.TerningSpill.Terningspill;
 import no.hvl.dat109.grensesnitt.UiInterface;
 
+/**
+ * Tekstgrensesnitt for terningspill
+ * @author Gruppe 13
+ *
+ */
 public class Tekstgrensesnitt implements UiInterface {
 
 	Scanner inn;

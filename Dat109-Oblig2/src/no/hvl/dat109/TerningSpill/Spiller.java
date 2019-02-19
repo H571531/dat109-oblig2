@@ -13,10 +13,9 @@ public class Spiller {
 	private int verdi;
 
 	/**
-	 * Konstrukt�r
+	 * Konstruktør
 	 * 
-	 * @param navn
-	 *            p� spiller
+	 * @param navn på spiller
 	 */
 	public Spiller(String navn) {
 		this.navn = navn;
@@ -24,10 +23,9 @@ public class Spiller {
 	}
 
 	/**
-	 * Starter koppen og tar vare p� verdiene
+	 * Triller terninger i kopp, og tar vare på summen
 	 * 
-	 * @param kopp
-	 *            som skal spilles med.
+	 * @param kopp som skal spilles med.
 	 */
 	public void spill(KoppInterface kopp) {
 		kopp.trill();
@@ -54,7 +52,5 @@ public class Spiller {
 	public String toString() {
 		return navn;
 	}
-	
-	
 
 }
