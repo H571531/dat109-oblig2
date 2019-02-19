@@ -10,10 +10,10 @@ import no.hvl.dat109.TerningSpill.Terningspill;
  *
  */
 public interface UiInterface {
+	
+	void setUpDeltakere();
 
-	void setUpDeltakere(Terningspill spill);
-
-	void visVinner(String vinner);
+	void visVinner();
 
 	boolean spilleIgjen();
 

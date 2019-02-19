@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import no.hvl.dat109.TerningSpill.Spiller;
 import no.hvl.dat109.TerningSpill.Terningspill;
 import no.hvl.dat109.grensesnitt.UiInterface;
 
@@ -16,12 +17,12 @@ import no.hvl.dat109.grensesnitt.UiInterface;
  *
  */
 public class MessageDialogUi implements UiInterface {
-
-	public MessageDialogUi() {
-
+	private Terningspill spill;
+	public MessageDialogUi(Terningspill spill) {
+		this.spill=spill;
 	}
 
-	public void setUpDeltakere(Terningspill spill) {
+	public void setUpDeltakere() {
 		boolean fornoyd = false;
 		List<String> deltakere = new ArrayList<String>();
 		String input = "";
@@ -39,8 +40,16 @@ public class MessageDialogUi implements UiInterface {
 		 deltakere.forEach(s -> spill.leggTilSpiller(s));
 	}
 
-	public void visVinner(String vinner) {
-		JOptionPane.showMessageDialog(null, vinner);
+	public void visVinner() {
+		Spiller vinner = spill.spill();
+		String vinnerSetning="";
+		if (!(vinner == null)) {
+			vinnerSetning = vinner.getNavn() + " vant med " + vinner.getVerdi() + " poeng!";
+		} else {
+			vinnerSetning = "Ingen spillere.";
+		}
+		
+		JOptionPane.showMessageDialog(null, vinnerSetning);
 	}
 
 	public boolean spilleIgjen() {
@@ -56,4 +65,5 @@ public class MessageDialogUi implements UiInterface {
 		return spille;
 
 	}
+
 }

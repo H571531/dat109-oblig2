@@ -23,23 +23,17 @@ public class Klient {
 		List<String> spillere = new ArrayList<String>();
 		Terningspill spill = new Terningspill();
 		UiInterface ui;
-
-		ui = new MessageDialogUi();
+		ui = new MessageDialogUi(spill);
+		
 		boolean ferdig = false;
 		Spiller vinner;
 		String vinnerSetning;
 
-		ui.setUpDeltakere(spill);
+		ui.setUpDeltakere();
 		
 
 		while (!ferdig) {
-			vinner = spill.spill();
-			if (!(vinner == null)) {
-				vinnerSetning = vinner.getNavn() + " vant med " + vinner.getVerdi() + " poeng!";
-			} else {
-				vinnerSetning = "Ingen spillere.";
-			}
-			ui.visVinner(vinnerSetning);
+			ui.visVinner();
 			ferdig = ui.spilleIgjen();
 		}
 	}
