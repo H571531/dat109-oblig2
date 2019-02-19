@@ -2,6 +2,7 @@ package no.hvl.dat109.TerningSpill;
 
 import java.util.Random;
 
+import no.hvl.dat109.grensesnitt.TerningInterface;
 import no.hvl.dat109.util.Konstanter;
 
 /**
@@ -10,7 +11,7 @@ import no.hvl.dat109.util.Konstanter;
  * @author Gruppe 13
  *
  */
-public class Terning {
+public class Terning implements TerningInterface {
 	private int id;
 	private int verdi;
 	private Random random;

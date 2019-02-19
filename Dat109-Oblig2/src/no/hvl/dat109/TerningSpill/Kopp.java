@@ -3,6 +3,8 @@ package no.hvl.dat109.TerningSpill;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import no.hvl.dat109.grensesnitt.TerningInterface;
 import no.hvl.dat109.grensesnitt.KoppInterface;
 import no.hvl.dat109.util.Konstanter;
 
@@ -12,16 +14,20 @@ import no.hvl.dat109.util.Konstanter;
  * @author Gruppe 13
  *
  */
+
+
+
 public class Kopp implements KoppInterface {
-	private List<Terning> terninger = new ArrayList<Terning>();
+  	private List<TerningInterface> terninger = new ArrayList<TerningInterface>();
+
+
 	private int sum;
 	private int id;
 
 	/**
 	 * Konstrukt�r
 	 * 
-	 * @param id
-	 *            for kopp.
+	 * @param id for kopp.
 	 */
 	public Kopp() {
 		for (int i = 0; i < Konstanter.ANTALLTERNINGER; i++) {
