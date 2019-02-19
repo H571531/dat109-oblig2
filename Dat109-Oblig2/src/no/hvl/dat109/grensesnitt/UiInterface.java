@@ -1,6 +1,8 @@
 package no.hvl.dat109.grensesnitt;
 
 import java.util.List;
+
+import no.hvl.dat109.TerningSpill.Terningspill;
 /**
  * Grensesnitt for brukergrensesnitt
  * 
@@ -9,7 +11,7 @@ import java.util.List;
  */
 public interface UiInterface {
 
-	List<String> setUpDeltakere();
+	void setUpDeltakere(Terningspill spill);
 
 	void visVinner(String vinner);
 

@@ -29,8 +29,8 @@ public class Klient {
 		Spiller vinner;
 		String vinnerSetning;
 
-		spillere = ui.setUpDeltakere();
-		spillere.forEach(s -> spill.leggTilSpiller(s));
+		ui.setUpDeltakere(spill);
+		
 
 		while (!ferdig) {
 			vinner = spill.spill();

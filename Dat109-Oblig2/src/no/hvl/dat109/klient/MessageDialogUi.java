@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import no.hvl.dat109.TerningSpill.Terningspill;
 import no.hvl.dat109.grensesnitt.UiInterface;
 
 /**
@@ -20,7 +21,7 @@ public class MessageDialogUi implements UiInterface {
 
 	}
 
-	public List<String> setUpDeltakere() {
+	public void setUpDeltakere(Terningspill spill) {
 		boolean fornoyd = false;
 		List<String> deltakere = new ArrayList<String>();
 		String input = "";
@@ -35,7 +36,7 @@ public class MessageDialogUi implements UiInterface {
 			}
 			spillerT++;
 		} while (!fornoyd);
-		return deltakere;
+		 deltakere.forEach(s -> spill.leggTilSpiller(s));
 	}
 
 	public void visVinner(String vinner) {
